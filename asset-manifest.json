@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tester-login/static/css/main.ce0c5fde.css",
+    "main.js": "/tester-login/static/js/main.11945cd5.js",
+    "index.html": "/tester-login/index.html",
+    "main.ce0c5fde.css.map": "/tester-login/static/css/main.ce0c5fde.css.map",
+    "main.11945cd5.js.map": "/tester-login/static/js/main.11945cd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce0c5fde.css",
+    "static/js/main.11945cd5.js"
+  ]
+}
