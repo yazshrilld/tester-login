@@ -6,18 +6,17 @@ const Header = () => {
 
   const dispatch = useDispatch();
   const isLogIn = useSelector(authReducer => authReducer);
-  console.log(isLogIn)
+  // console.log(isLogIn)
 
 
   const logoutHandler = () => {
     dispatch(logOut());
-
   };
 
   return (
     <header className={classes.header}>
       <h1>Login & Counters</h1>
-      {isLogIn.isLoggingOut && (
+      {isLogIn.isLoggingIn && (
         <nav>
         <ul>
           <li>

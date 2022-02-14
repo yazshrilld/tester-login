@@ -4,9 +4,9 @@ import TYPES from "../const/AuthConstant";
 const { USER_AUTH_SUCCESS, USER_AUTH_FAILURE, IS_LOGGING_OUT } = TYPES;
 
 const initiaState = {
-    isLoggingIn: true,
+    isLoggingIn: false,
     // isProcessing: false,
-    isLoggingOut: false,
+    // isLoggingOut: false,
     user: {},
     error: "",
 }
@@ -19,19 +19,19 @@ export const authReducer = (state = initiaState, action) => {
                 isLoggingIn: action.payload,
                 // isLoggingIn: !isEmpty(action.payload),
                 user: action.payload,
-            };
+        };
 
         case USER_AUTH_FAILURE:
             return {
                 ...state,
                 error: action.payload,
-            };
+        };
 
         case IS_LOGGING_OUT:
             return {
                 ...state,
-                isLoggingOut: action.payload
-            }
+                isLoggingIn: false,
+        }
         default:
         return state;
     }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import classes from './Auth.module.css';
 import { getUser } from '../actions/AuthAction';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 // let data = {
 //   id: 101,
